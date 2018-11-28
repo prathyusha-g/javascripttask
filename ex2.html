@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 4px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.column:hover .dropdown-content {
+    display: block;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+</style>
+</head>
+<body style="text-align: center;">
+
+<h2 style="font-size: 40px;color: red">Images Of New Delhi</h2>
+<br>
+<br>
+<hr>
+<div class="row">
+ <div class="column"style="display: inline-block;" >
+    <img src="http://indiaculturetree.com/wp-content/uploads/2013/12/LotusTemple_Wallpaper.jpg" alt="Lotus-Temple" style="width:100%">
+     <div class="dropdown-content">
+    <p class="desc" style="color: blue;font-size: 25px;font-family: sans-serif;">East of Nehru place, this temple is built in the shape of a lotus flower and is the last of seven Major Bahai's temples built around the world.<br> Completed in1986 it is set among the lush green landscaped gardens.<br>
+    The structure is made up of pure white marble The architect Furiburz Sabha chose the lotus as the symbol <br>common to Hinduism, Buddhism, Jainism and Islams.</p>
+  </div>
+</div>
+  <div class="column" style="display: inline-block;">
+    <img src=" https://cdn.britannica.com/s:700x450/37/189837-004-1EE26D5A.jpg" alt="India-Gate" style="width:80%">
+    <div class="dropdown-content">
+    <p class="desc" style="color: blue;font-size: 25px;font-family: sans-serif; ">The foundation stone of India Gate was laid by His Royal Highness, the Duke of Connaught in 1921 and it was designed by Edwin Lutyens.<br> The monument was dedicated to the nation 10 years later by the then Viceroy, Lord Irwin. Another memorial,<br> Amar Jawan Jyoti was added much later, after India got its independence.</p>
+  </div>
+</div>
+  <div class="column" style="padding:0px">
+    <img src="https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2016/05/19/14636604664087.jpg" alt="Taj-Mahal" style="width:100%">
+    <div class="dropdown-content">
+    <p class="desc" style="color: blue;font-size: 25px;font-family: sans-serif;">Taj Mahal, "the epitome of love", is "a monument of immeasurable beauty".<br> The beauty of this magnificent monument is such that it is beyond the scope of words. <br>The thoughts that come into the mind while watching the Taj Mahal of Agra is not just its phenomenal beauty, but the immense love which was the reason behind its construction.</p>
+  </div>
+
+
+  </div>
+  </div>
+
+
+</body>
+</html>

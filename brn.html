@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 4px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.column:hover .dropdown-content {
+    display: block;
+}
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+</style>
+</head>
+<body style="text-align: center;">
+
+<h2 style="font-size: 40px;color: red">Images Of Bern</h2>
+<br>
+<br>
+<hr>
+<div class="row">
+ <div class="column"style="display: inline-block;" >
+    <img src="https://www.planetware.com/photos-large/CH/switzerland-bern-Old-town.jpg" style="width:100%">
+     <div class="dropdown-content">
+    <p class="desc" style="color: blue;font-size: 25px;font-family: sans-serif;">he old town of Bern is more than worthy of its status as a UNESCO World Heritage Site.<br> Situated on a cliff surrounded on three sides by the stunning aquamarine waters of the Aare River, the old town has preserved<br> much of its medieval character.</p>
+  </div>
+</div>
+  <div class="column" style="display: inline-block;">
+    <img src="https://www.planetware.com/photos-large/CH/switzerland-bern-Tower-clock.jpg " alt="Clock-Tower" style="width:90%">
+    <div class="dropdown-content">
+    <p class="desc" style="color: blue;font-size: 25px;font-family: sans-serif; ">The 800-year-old Clock Tower (Zytglogge) is one of the most famous of Bern's landmarks <br>- and is well worth the visit (the clock dates to 1530). <br>Just above the western gate tower in the old section of town, this 23-meter tower is decorated with an immense astronomical clock.</p>
+  </div>
+</div>
+  <div class="column" style="padding:0px">
+    <img src="https://www.planetware.com/photos-large/CH/switzerland-bern-Gurten-mountain.jpg" alt="Gurten" style="width:100%">
+    <div class="dropdown-content">
+    <p class="desc" style="color: blue;font-size: 25px;font-family: sans-serif;">This is perhaps a favorite place in all of Bern.<br> Just to the south of the center of the city, the Gurten is a high mountain (864 meters) with a 360-degree view.<br> Below lies the gorgeous city with its towers and domes, while the spiky Alps jut from the countryside beyond.</p>
+  </div>
+
+
+  </div>
+  </div>
+
+
+</body>
+</html>

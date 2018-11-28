@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)"  src="smile.gif" alt="Smiley" width="32" height="32">
+
+<p>This is my gif</p>
+<script>
+function bigImg(x) {
+    x.style.height = "64%";
+    x.style.width = "64%";
+}
+
+function normalImg(x) {
+    x.style.height = "32%";
+    x.style.width = "32%";
+}
+</script>
+
+</body>
+</html>

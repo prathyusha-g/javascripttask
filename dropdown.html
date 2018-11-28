@@ -1,0 +1,24 @@
+<html>
+<head>
+	<title>Dropdown Paragraph</title>
+</head>
+<body style="background-color: pink;text-align: center;">
+	<select id="List" style="font-size: 35px" onchange="myfunction();">Online Courses
+		<option value="HTML is the standard markup language for creating Web pages.HTML stands for Hyper Text Markup Language HTML describes the structure of Web pages using markup HTML elements are the building blocks of HTML pages HTML elements are represented by tags" style="color: black;font-size: 15px">Html</option>
+
+		<option value="CSS stands for Cascading Style SheetsCSS describes how HTML elements are to be displayed on screen, paper, or in other mediaCSS saves a lot of work. It can control the layout of multiple web pages all at onceExternal stylesheets are stored in CSS files" style="color: black;font-size: 15px">Css</option>
+
+		<option value="avaScript is one of the 3 languages all web developers must learn:1. HTML to define the content of web pages 2. CSS to specify the layout of web pages 3. JavaScript to program the behavior of web pages Web pages are not the only place where JavaScript is used. Many desktop and server programs use JavaScript. Node.js is the best known. Some databases, like MongoDB and CouchDB, also use JavaScript as their programming language. " style="color: black;font-size: 15px">javascript</option>
+
+		<option value="Python can be used on a server to create web applications.Python can be used alongside software to create workflows.Python can connect to database systems. It can also read and modify files.Python can be used to handle big data and perform complex mathematics.Python can be used for rapid prototyping, or for production-ready software development." style="color: black;font-size: 15px">python</option>
+	</select>
+	<p id="demo" style="font-size: 45px">
+	</p>
+	<script>
+		function myfunction(){
+			var technolog = document.getElementById('List').value;
+			document.getElementById('demo').innerHTML = technolog
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+}
+.fix{
+	clear:both;
+	overflow: hidden;
+}
+.section-padding{
+	padding: 50px 0;
+}
+.wrapper{
+	width: 1170px;
+	margin: 0 auto;
+}
+.header{
+	overflow: hidden;
+	height: 100vh;
+}
+.video-bg{
+	position: absolute;
+	right: 0;
+	bottom:100;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+
+}
+.nav-area{
+	background: rgba(0,0,0,0.6);
+	height: 60px;
+	position: absolute;
+	width: 100%;
+}
+.logo{
+	margin: 10px 50px;
+	height: 60px;
+	float: left;
+	color: #fff;
+	font-size: 35px;
+	text-transform: uppercase;
+}
+.menu-area{
+	float: right;
+	list-style: none;
+	margin: 20px;
+}
+.menu-area li{
+	display: inline-block;
+	margin: 0 5px;
+}
+.menu-area li a{
+	text-decoration: none;
+	color: #fff;
+	padding: 5px 10px;
+	letter-spacing: 2px;
+}
+.menu-area li.active a{
+	color: tomato;
+}
+.menu-area li a:hover{
+	color: tomato;
+}
+
+.welcome-text.row {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.welcome-text h2{
+	color: #fff;
+	font-size: 35px;
+	margin: 0;
+	text-align: center;
+}
+.welcome-text h3{
+	text-align: center;
+}
+.welcome-text p{
+	color: black;
+	font-size: 25px;
+	text-align: center;
+	
+}
+.btn{
+	background:tomato;
+	border: none;
+	color: #fff;
+	padding: 10px 30px;
+	font-size: 15px;
+	text-transform: uppercase;
+	border-radius: 25px;
+	display: inline-block;
+	margin-top: 25px;
+}
+.section header{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.section-header h2{
+	text-transform: uppercase;
+	font-size: 35px;
+	margin-bottom: 0;
+}
+.line{
+	height: 2px;
+	width: 100px;
+	background: #000;
+	display: inline-block;
+}

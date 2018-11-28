@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Closable button inside the expanded image */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Ducati</h2>
+  <hr>
+  </div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://www.cycleworld.com/sites/cycleworld.com/files/styles/800_1x_/public/buyers_guide/2016/2016_Ducati_Scrambler_UrbanEnduro.jpg?itok=N0NH5IPo" alt="ducati-1" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://auto.ndtvimg.com/bike-images/colors/ducati/diavel/ducati-diavel-dark-stealth.jpg?v=1" alt="ducati-2" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://news.maxabout.com/wp-content/uploads/2016/12/moto_media.jpg" alt="ducati-3" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="http://bikeland.kz/wp-content/uploads/2016/10/chief-dark-horse-thunder-black1.jpg" alt="ducati-4" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+  <div class="column" style="text-align: center;">
+    <img src="https://mcn-images.bauersecure.com/upload/275232/images/01ducati-diavel.jpg" alt="ducati-5" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column" style="text-align: center;">
+    <img src="https://bd.gaadicdn.com/processedimages/ducati/scrambler-1100/640X309/v_ducati-scrambler-1100-std1532526140.jpg" alt="ducati-6" style="width:100%" onclick="myFunction(this);">
+  </div>
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+ 
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>

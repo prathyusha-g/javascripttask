@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+}
+
+.content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+}
+
+
+header{
+	background: rgba(0,0,100,0.5);
+	height: 100vh
+}
+#videoDiv {width: 100%; height: 360px; position: relative;}
+#videoBlock {width: 100%; height: 100%;  display: flex;  justify-content: center; align-items: center;}
+#videoMessage {width: 100%; height:100%; position: absolute; top: 0; left: 0;}
+#videoMessage *{padding:0.4em; margin:0}
+#videoMessage {text-shadow: 2px 2px 2px #000000; color:white;z-index:99 }
+#videoMessage h1{font-size: 2em;color:#ffffff;text-align:center;}
+#videoMessage h2{font-size: 1.5em;color:#ffffff;text-align:center;}
+#videoMessage h3{font-size: 1.2em;color:#ffffff;text-align:center;}
+.videoClick {text-align:center}
+.videoClick a{color:white;background-color:rgba(241, 241, 241, 0.25);font-size: 1.7em;cursor:pointer;cursor:hand}
+.navbar-right{
+  float:right;
+  padding-right:10%;
+}
+
+.navbar-right a{
+  text-decoration:none;
+  padding:10px;
+  color: #fff;
+  font-family:Arial;
+  font-weight:900;
+}
+
+.navbar-right a:hover{
+  text-decoration:underline;
+}
+.navbar-logo{
+  padding-left:10%;
+  font-family:Arial;
+  font-size:30px;
+  font-weight:bold;
+  text-decoration:none;
+  color:#fff; 
+}
+
+.video-container {
+z-index: -100;
+width:100%;
+height:75%;
+overflow:hidden;
+position:absolute;
+top:0;
+left:0;
+}
+
+#video-bg{
+  width:100%;
+ 
+}
+
+.portfolio-section{
+  margin-top:50%;
+}
+.tagline-left{
+  float:left;
+  width:50%;
+  text-align:center;
+}
+
+.tagline-right{
+  float:right;
+  width:50%;
+  text-align:center;
+}
+
+.tagline-video{
+  width:75%;
+}
+
+.tagline-right-text{
+ position:absolute;
+ margin-top:9%;
+ text-align:center;
+ margin-left:17%;
+font-family:Arial;
+ color:#fff;
+  width:290px;
+  font-size:40px;
+}
+
+.tagline-left-text{
+ position:absolute;
+ margin-top:9%;
+ text-align:center;
+ margin-left:11%;
+font-family:Arial;
+ color:#fff;
+  width:375px;
+  font-size:40px;
+}

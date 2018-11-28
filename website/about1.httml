@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+     <meta name="viewpont" content="width=device-width,initial-scale=1">
+	<title>MY NEW WEBSITE</title>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="about.html">
+</head>
+<body>
+<header class="fix">
+	<video src="videos.mp4" class="video-bg" autoplay loop muted></video>
+	<div class="nav-area">
+		<div class="logo">FACONTECH & DECORACAO</div>
+		<ul class="menu-area">
+			<li class="active"><a href="new.html" type="Home">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="Contact.html">Contact</a></li>
+			<li><a href="register.html">Registration</a></li>
+		</ul>
+		<br>
+		<br>
+		<br>
+		<br>
+				<div class="welcome-text">
+					<br>
+					<br>
+					<br>
+
+
+</header>
+<div class="main-content-area fix">
+	<div class="about-section-padding fix">
+		<div class="wrapper">
+			<div class="section-header fix">
+
+				<h1>About</h1>
+
+				<h2>The International Techno School of Fashion Design</h2>
+				<div class="line"></div>
+				<p><center>The world’s largest companies and agencies trust i creative staffing with their brand.<br> Our mission is to improve the art of communication through design and marketing.<br> We achieve this with every placement by representing only true professionals. <br>It is our evaluation, testing processes and years of experience that has earned <br>the trust of so many large corporations with protecting and improving the perception of their brands..</center></p>
+			</div>
+			<div class="about-area">
+				<div class="about-left">
+				<img src="image.jpg" width="250px" height="250px">
+			</div>
+			<div class="about-left">
+			<h2>The International Techno School of Interior Design</h2>
+			<p><center>Getting your space designed by one of our top interior designers in Hyderabad is the best thing you could for it (besides buying or renting it in the first place!). Why? Because, at UrbanClap, each one of our best interior designers in Hyderabad is reliable (with their backgrounds verified by top agencies in India), skilled and experienced, quality-conscious, and has great regard for your budget and time. So, hurry up and book our interior designing services in Hyderabad.</center></p>
+
+            </div>
+	</div>
+	</div>
+</body>
+</html>

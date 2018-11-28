@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h1 style="color: black;text-shadow: grey;font-size: 25px;font-family: cursive;">KAwAsAki</h1>
+  <hr>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="https://i.ytimg.com/vi/UEtThKlT4-M/maxresdefault.jpg" alt="kawasaki-1" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="http://cdnmedia.endeavorsuite.com/images/organizations/19e089d2-5c6e-48ff-be1f-e586704b5e9a/inventory/1371073/2017%20Kawasaki%20KX%2085%20(17).JPG" alt="kawasaki-2" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZtcGGr2IP3gI4ahXAVgvxwdPxVO7dJZR9rJgpE6dPHiiq8WV7" alt="kawasaki-3" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDCuJPE30Wxh8WeU2jRtzrOL62_E69bHpQYgW2XeDmF3pr7v-L" alt="kawasaki-4" style="width:100%" onclick="myFunction(this);">
+  </div>
+   <div class="column">
+    <img src="https://img.sm360.ca/ir/w770/images/inventory/groupe-samatas/kawasaki/ninja-h2r/2018/5463586/5463586_04176_TR_95b9a4a7-298d-429c-af6d-7ab4bad72491.jpg" alt="kawasaki-5" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://auto.ndtvimg.com/bike-images/big/kawasaki/z1000/kawasaki-z1000.jpg?v=4" alt="kawasaki-6" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://media.zigcdn.com/media/model/2018/Jul/ninja-300-2018-full-right-side-view_320x160.jpg" alt="kawasaki-7" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://bd.gaadicdn.com/processedimages/kawasaki/kawasaki-z1000/640X309/v_z-1000-std1533102528.jpg" alt="kawasaki-8" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://images.carbay.ph/540x270/cover/74/969/kawasaki-z1000-r-edition-87052.jpg" alt="kawasaki-9" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="https://cdn04.carsforsale.com/3/1004012/21015315/thumb/1080049209.jpg" alt="kawasaki-10" style="width:100%" onclick="myFunction(this);">
+  </div>
+  
+  </div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:90%">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>

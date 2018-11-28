@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>This is my youtube page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+<body>
+	<h1 style="text-align: center;">My video</h1>
+	<iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+		<style>
+			.fa {
+    font-size: 50px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.fa:hover {
+  color: darkblue;
+}
+		</style>
+</iframe><br>
+<i class="fa fa-thumbs-o-up"
+	id="like"
+	onclick="like()"
+	style="font-size: 48px;color: blue">
+</i> &nbsp;
+<span id="likeCount"></span>&nbsp;
+<i class="fa fa-thumbs-o-down"
+id="dislike"
+onclick="dislike()"
+style="font-size:48px;color: blue">
+</i>&nbsp; <span id="dislikeCount"></span>
+
+<script>
+	var likes=0;
+	var dislikes=0;
+	document.getElementById("likeCount").innerHTML=likes;
+	document.getElementById("dislikeCount").innerHTML=dislikes
+	function like(){
+		likes++;
+		document.getElementById("likeCount").innerHTML=likes;
+		}
+	function dislike(){
+		dislikes++;
+		document.getElementById("dislikeCount").innerHTML=dislikes
+	}
+	
+
+</script>
+</body>
+</html>

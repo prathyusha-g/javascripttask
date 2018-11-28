@@ -1,0 +1,86 @@
+<html>
+<head>
+  <style>
+ 
+    .view-card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+  </style>
+</head>
+<body>
+
+	<center><h1 style="color: blue;font-size: 40px;font-family: cursive;">HTML FORM</h1></center>
+	<br>
+	<hr>
+	
+   <form>
+<center>
+    <strong style="color: red;font-size: 30px">Product Url:</strong><input type="text" id="link"><br>
+   <br>
+   <br>
+    
+    <strong style="color: red;font-size: 30px">Product Name:</strong><input type="text" id="pname"><br>
+    <br>
+    <br>
+    <strong style="color: red;font-size: 30px">Product Id:</strong><input type="text" id="pid"><br>
+    <br>
+    <br>
+
+    <strong style="color: red;font-size: 30px">Product Price:</strong><input type="text" id="pprice"><br>
+    <br>
+    <br>
+
+   
+   <p><button type="button" name="submit" onclick="display()" class="card-button">submit</button></p>
+</center>
+   <div class="view-card">
+   <center><img id="image"></center>
+   <p id="d"></p>
+   <p id="a" style="color: red;font-size: 20px"></p>
+   <p id="b" style="font-size: 20px "></p>
+   <p id="c" style="color: grey;
+  font-size: 22px;"></p>
+   
+
+  </form>
+</center>
+
+</div>
+<script>
+  
+	 function display(){
+	 	event.preventDefault();
+    function image() {
+                document.getElementById("image").style.display = "block";
+            }
+            image();
+    var d = document.getElementById('link').value;
+	 	var a = document.getElementById('pname').value;
+	 	var b = document.getElementById('pid').value;
+	 	var c = document.getElementById('pprice').value;
+	 	/*var d = document.getElementById('link').value;*/
+           var img = document.getElementById("image");
+         /*document.getElementById("d").innerHTML = d;*/
+            img.src = d;
+            img.width = "200";
+            img.height = "200";
+            img.align = "center";
+    
+          document.getElementById('a').innerHTML=a;
+          document.getElementById('b').innerHTML=b;
+          document.getElementById('c').innerHTML=c;
+       
+	 	 }
+
+</script>
+
+</body>
+</html>
+
+
+

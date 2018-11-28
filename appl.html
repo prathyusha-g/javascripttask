@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+<form>
+	<input type="text" id="Username" placeholder="Username">
+	<input type="password" id="password" placeholder="Password">
+	<input type="submit" value="submit" onclick="validator()">
+
+	<script>
+		function validator(){
+			event.preventDefault();
+			var username=document.getElementById("Username").value;
+			var password=document.getElementById("password").value;
+			if(username.length<=0){
+			alert("Username should not be empty");
+			return;
+		}
+		    if(username.length<5){
+		    	alert("Username should be atleast 5 charectors");
+		    	return;
+		    }
+		
+			if(password.length<=0){
+			alert("password should not be empty");
+			return;
+		}
+		    if(password.length<10){
+		    	alert("password should be atleast 10 charectors");
+		    	return;
+		    }
+
+		}
+
+	</script>
+</form>
+</body>
+</html>
