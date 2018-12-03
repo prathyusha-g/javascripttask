@@ -1,37 +1,64 @@
 <html>
 <center>
     <head>
-        <link rel="stylesheet" type="text/css" href="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
         h1{
             background-image: url("http://arkansasconsumer.org/wp-content/uploads/2015/04/Electronic-Products1.jpg");
         }
             .cardStyle{
-                display: inline-block;
-                margin: 10px;
-                max-width: 300;
+                max-width: 280;
                 max-height: 500;
                 border-radius:10PX;
                 background-color: white;
                 box-shadow: 0 4px 8px 0 rgb(102, 102, 153);
                 text-align: center;
+                display: inline-block;
+                margin: 10px;
+                position: relative;
                 }
 
-      
-        .likebutton {
-            float: right;
+      .p1{
+        color: blue;
+        font-size: 35px;
+        text-shadow: 2px 2px #black;
+        font-family: serif;
+
+      }
+
+      .likebutton {
+            float: center;
             padding-bottom: 10px;
             
             height: 50;
             width: 50;
+            margin: 10px;
         }
         .dislikebutton {
-            float: left;
+            float: center;
             padding-bottom: 10px;
             height: 50;
             width: 50;
         }
         
+
+      .p2{
+        color: red;
+        font-size: 25px;
+        font-family: cursive;
+      }
+
+      .p3 {
+  color: grey;
+  font-size: 22px;
+}
+      .closebtn{
+        position: absolute;
+        top: 0;
+        right: 0;
+      }  
 
         </style>
     </head>
@@ -70,13 +97,14 @@
             divison.appendChild(card);
 
             var bttn=document.createElement("button");
+            bttn.classList.add("closebtn");
             var node=document.createTextNode("X");
+            /*bttn.classList.add("closebtn");*/
             bttn.appendChild(node);
             card.appendChild(bttn);
             bttn.onclick= function test(e) {
             document.getElementById(e.target.parentNode.id).remove();
             }
-            
             
             var image = document.createElement("img");
             image.setAttribute("src",simage.value);
@@ -85,51 +113,44 @@
             card.appendChild(image);
 
             image.onmouseover = function(event) {
-              var imglink = document.getElementById("img").display.href="nextp.html";
-              imglink.setAttribute("p","hello samsung phone is on offer now hurry up!!!");
-                event.currentTarget.height="500";
-                event.currentTarget.width="500";
-                card.appendChild(imglink);
-            }
-            image.onmouseout = function(event) {
-                event.currentTarget.href="nextp.html";
-                event.currentTarget.height="250";
-                event.currentTarget.width="250";
-            }
-
-            var nextpage = document.createElement("a");
-            nextpage.setAttribute("href","nextp.html");
-
-
-            image.onmouseover = function(event) {
-                event.currentTarget.height="500";
-                event.currentTarget.width="500";
+                image.setAttribute("href","pag2.html")
+                event.currentTarget.height="400";
+                event.currentTarget.width="400";
             }
             image.onmouseout = function(event) {
                 event.currentTarget.height="250";
                 event.currentTarget.width="250";
             }
-            
+            //image.onmouseover = function(e) {
+                //zoomImg(e);
+            //}
+            // image.onmouseover= zoomImg;
             var paraname = document.createElement("p");
+            paraname.classList.add("p1");
+            paraname.id="p_name"+Math.random();
             var node = document.createTextNode(name.value);
             paraname.appendChild(node);
             card.appendChild(paraname);
             
             var paraname2 = document.createElement("p");
+            paraname2.classList.add("p2");
+            paraname2.id="p_id"+Math.random();
             var node = document.createTextNode(id.value);
             paraname2.appendChild(node);
             card.appendChild(paraname2);
 
             var paraname3=document.createElement("p");
-            var node=document.createTextNode(price.value);
+            paraname3.classList.add("p3");
+            paraname3.id="p_price"+Math.random();
+            var node=document.createTextNode("₹"+price.value);
             paraname3.appendChild(node);
             card.appendChild(paraname3);
 
             var hold=document.createElement("span");
             var likebttn=document.createElement("img");
-            likebttn.setAttribute("src","https://static.adweek.com/adweek.com-prod/wp-content/uploads/sites/2/2013/07/LikeButton304.jpg");
+            likebttn.setAttribute("src","https://static.thenounproject.com/png/15931-200.png");
             likebttn.setAttribute("height","30");
-            likebttn.setAttribute("width","30");
+            likebttn.setAttribute("width","40");
             hold.appendChild(likebttn);
             var likespan=document.createElement("span");
             hold.appendChild(likespan);
@@ -143,9 +164,9 @@
 
             var hold1=document.createElement("span");
             var dislikebttn=document.createElement("img");
-            dislikebttn.setAttribute("src","https://i.kinja-img.com/gawker-media/image/upload/s--9V5t0E6n--/c_scale,f_auto,fl_progressive,q_80,w_800/1441999542577561233.jpg");
+            dislikebttn.setAttribute("src","https://www.freeiconspng.com/uploads/black-and-white-youtube-dislike-21.png");
             dislikebttn.setAttribute("height","30");
-            dislikebttn.setAttribute("width","30");
+            dislikebttn.setAttribute("width","40");
             hold1.appendChild(dislikebttn);
             var dislikespan=document.createElement("span");
             hold1.appendChild(dislikespan);
@@ -156,8 +177,6 @@
                 dislikes++;
                 l.currentTarget.parentNode.lastChild.innerHTML=dislikes;
             }    
-
-            
             
     }
             
